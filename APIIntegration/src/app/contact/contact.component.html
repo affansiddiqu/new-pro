@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        @for(item of MyPost; track item.id) {
+            <div class="col-md-4 mb-4"> <!-- Added margin bottom for spacing -->
+                <div class="card btn btn-warning">
+                    <div class="card-body">
+                        <a  class="btn btn-primary">{{item.id}}</a>
+                        <h5 class="card-title">{{item.title}}</h5>
+                        <p class="card-text">{{item.body}}</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

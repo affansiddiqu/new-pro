@@ -1,0 +1,24 @@
+
+
+  <div class="container">
+    <div class="row" *ngIf="isDivisble == true">
+        <div class="col-md-4 col-sm-12 mt-3"  *ngFor="let prod of products">         
+<div class="card" style="width: 18rem;">
+    <img src="{{prod.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{prod.name}}</h5>
+      <p class="card-text">{{prod.descripition}}</p>
+      <a href="#" class="btn btn-danger">{{prod.Price}}</a><br>
+      <i class="fa-sharp fa-solid fa-caret-down"></i>
+    </div>
+  </div>
+</div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" (click)="togglecard()"   type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   Toggle Card
+  </button>
+
+  
+</div>
+</div>
